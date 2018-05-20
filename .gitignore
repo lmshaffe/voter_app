@@ -1,0 +1,11 @@
+**/.DS_Store
+**/._.DS_Store
+pid
+node_modules
+config/env/*
+!config/env/schema.env
+.vscode
+*.bat
+*.sh
+*.zip
+npm-debug.log

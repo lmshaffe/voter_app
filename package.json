@@ -1,0 +1,43 @@
+{
+  "name": "voter_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "voter_app": "Start.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "eslint": "^4.12.1",
+    "memoizee": "^0.4.12",
+    "microservice_core": "git+https://github.com/lmshaffe/microservice_core.git",
+    "mongoose": "^5.1.1",
+    "rest_api": "git+https://github.com/lmshaffe/rest_api.git"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-things": "^0.2.0",
+    "mocha": "^4.0.1",
+    "sinon": "^4.1.2"
+  },
+  "scripts": {
+    "start": "node bin/Start",
+    "stop": "bin/stop.sh",
+    "test": "mocha tests/all.suite.js",
+    "test_unit": "mocha tests/unit.suite.js",
+    "test_integration": "mocha tests/integration.suite.js",
+    "lint": "eslint . || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmshaffe/voter_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmshaffe/voter_app/issues"
+  },
+  "homepage": "https://github.com/lmshaffe/voter_app#readme"
+}
